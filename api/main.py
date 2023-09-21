@@ -6,6 +6,14 @@ from io import BytesIO
 from PIL import Image
 import tensorflow as tf
 
+
+import os
+path_to_saved_model = "..\model1"
+if os.path.exists(path_to_saved_model):
+    print("SavedModel file exists")
+else:
+    print("SavedModel file does not exist")
+
 app = FastAPI()
 MODEL = tf.keras.models.load_model("../model1")
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
