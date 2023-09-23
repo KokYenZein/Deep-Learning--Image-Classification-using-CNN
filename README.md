@@ -22,6 +22,9 @@ Potato farming is essential for food production worldwide. Identifying and class
   - TF Serving
   - Google Colab
 
+- **Dataset:**
+  - The Plant Village dataset was collected from [Kaggle](https://www.kaggle.com/datasets/arjuntejaswi/plant-village)
+
 - **Model Architecture:**
   - The CNN model includes additional layers for resizing, normalization, and data augmentation to enhance its performance.
   - It utilizes the Adam optimizer and the SparseCategoricalCrossentropy loss function for efficient training and accurate predictions.
